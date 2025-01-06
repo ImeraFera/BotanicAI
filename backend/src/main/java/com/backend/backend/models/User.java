@@ -59,8 +59,8 @@ public class User {
     private boolean isLocked = false;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Gender gender;
+    @Column
+    private Gender gender = Gender.OTHER;
 
     @Column(updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();

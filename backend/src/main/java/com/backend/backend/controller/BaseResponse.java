@@ -9,7 +9,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @JsonInclude(value = Include.NON_NULL)
-
 public class BaseResponse<T> {
 
     private int status;
